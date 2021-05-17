@@ -6,13 +6,16 @@ Dragon is a tool that have a lot of tools with different options you can do. It 
 The tool is not finished 100%, more features will be added.
 
 ## Build and install from source
-`git clone https://github.com/ShyGorilla/dragon.git`
+`git clone https://github.com/ShyGorilla/dragon.git` // Cloninng the tool
 
-`cd dragon`
+`cd dragon` // Change the directory to the tool
 
-`chmod +x dragon.sh`
+`chmod +x dragon.sh` // Change the permission of the file 
 
-`sudo ./dragon.sh`
+`sudo ./dragon.sh` // To run the tool
+
+or you can do all that with only one command to copy
+`git clone https://github.com/ShyGorilla/dragon.git ; cd dragon ; chmod +x dragon.sh ; sudo ./dragon.sh`
 
 ‘Press 2 to setup the tool’
 
