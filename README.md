@@ -1,7 +1,7 @@
 # dragon
 
 ## What is Dragon ?
-TorGhost is a tool that have a lot of tools with different options you can do. It has 4 menus and can install, start, and remove any tool.
+Dragon is a tool that have a lot of tools with different options you can do. It has 4 menus and can install, start, and remove any tool.
 
 The tool is not finished 100%, more features will be added.
 
