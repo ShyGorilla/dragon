@@ -15,10 +15,9 @@ color1=""
 color2=""
 color3=""
 color4=""
-tor=""
-air=""
 
-if ! find -type f -name "build.sh" | grep tools/network/torghost 2>/dev/null
+var1=$(find -type f -name "build.sh" | grep tools/network/torghost)
+if [ -z $var1 ]
 then
     tor="X"
     color1=$red
@@ -27,7 +26,8 @@ else
     color1=$okegreen
 fi
 
-if ! find -type f -name "airgeddon.sh" | grep tools/network/airgeddon 2>/dev/null
+var2=$(find -type f -name "airgeddon.sh" | grep tools/network/airgeddon)
+if [ -z $var2 ]
 then
     air="X"
     color2=$red
@@ -170,7 +170,7 @@ then
 
 elif [ $main -eq 0 ]
 then
-    sudo ./dragon.sh
+    sudo ./home.sh
 else
     echo "$red"
 	read -p  "   Wrong option. Press Enter to return" m

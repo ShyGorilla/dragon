@@ -15,11 +15,9 @@ color1=""
 color2=""
 color3=""
 color4=""
-droid=""
-mobsf=""
-gvm=""
 
-if ! find -type f -name "dhunter.rb" | grep tools/vulnerabilities/droid-hunter 2>/dev/null
+var1=$(find -type f -name "dhunter.rb" | grep tools/vulnerabilities/droid-hunter)
+if [ -z $var1 ]
 then
     droid="X"
     color1=$red
@@ -28,7 +26,8 @@ else
     color1=$okegreen
 fi
 
-if ! find -type f -name "run.sh" | grep tools/vulnerabilities/Mobile-Security-Framework-MobSF 2>/dev/null
+var2=$(find -type f -name "run.sh" | grep tools/vulnerabilities/Mobile-Security-Framework-MobSF)
+if [ -z $var2 ]
 then
     mobsf="X"
     color2=$red
@@ -37,7 +36,8 @@ else
     color2=$okegreen
 fi
 
-if ! hash gvm-stop 2>/dev/null
+var3=$(hash gvm-stop)
+if [ -z $var3 ]
 then
     gvm="X"
     color3=$red
@@ -45,6 +45,7 @@ else
     gvm="✔"
     color3=$okegreen
 fi
+
 ./logo.sh
 
 echo "  $lightgreen Before Starting any tool, you have to install it and get ✔ beside the tool"
@@ -223,7 +224,7 @@ then
 
 elif [ $main -eq 0 ]
 then
-    sudo ./dragon.sh
+    sudo ./home.sh
 else
     echo "$red"
 	read -p  "   Wrong option. Press Enter to return" m

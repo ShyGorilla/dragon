@@ -37,8 +37,8 @@ else
 	rkhunter="✔"
 	color2=$okegreen
 fi
-var=$(find -type f -name "lynis" | grep tools/rootkits/lynis/lynis)
 
+var=$(find -type f -name "lynis" | grep tools/rootkits/lynis/lynis)
 if [ -z $var ]
 then
 	lynis="x"
@@ -262,7 +262,7 @@ then
     	fi
 elif [ $main -eq 0 ]
 then
-    sudo ./dragon.sh
+    sudo ./home.sh
 else
     echo "$red"
 	read -p  "   Wrong option. Press Enter to return" m

@@ -15,9 +15,9 @@ color1=""
 color2=""
 color3=""
 color4=""
-cupp=""
 
-if ! find -type f -name "cupp.py" | grep tools/brute/cupp/cupp 2>/dev/null
+var1=$(find -type f -name "cupp.py" | grep tools/brute/cupp/cupp)
+if [ -z $var1 ]
 then
     cupp="X"
     color1=$red
@@ -135,7 +135,7 @@ then
 
 elif [ $main -eq 0 ]
 then
-    sudo ./dragon.sh
+    sudo ./home.sh
 else
     echo "$red"
 	read -p  "   Wrong option. Press Enter to return" m
