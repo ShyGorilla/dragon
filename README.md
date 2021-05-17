@@ -10,4 +10,6 @@ TorGhost is a tool that have a lot of tools with different options you can do. I
 
 `chmod +x dragon.sh`
 
+`sudo ./dragon.sh`
+
 ‘Press 2 to setup the tool’
