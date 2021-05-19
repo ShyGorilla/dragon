@@ -12,6 +12,8 @@ The tool is not finished 100%, more features will be added.
 
 `chmod +x dragon.sh` // Change the permission of the file 
 
+`sudo cat command.txt > ~/.Xresources` // To allow copy and paste in xterm 
+
 `sudo ./dragon.sh` // To run the tool
 
 or you can do all that with only one command to copy
