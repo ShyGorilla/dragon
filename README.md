@@ -9,6 +9,11 @@ The tool is not finished 100%, more features will be added.
 
 ![Linux](https://img.shields.io/badge/-Linux-000000?style=flat&logo=linux&logoColor=FCC624)
 
+## Coding languages 💻
+
+![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)&nbsp;
+![Shell](https://img.shields.io/badge/-Shell-333333?style=flat&logo=shell)&nbsp;
+
 ## Build and install from source
 `git clone https://github.com/ShyGorilla/dragon.git` // Cloninng the tool
 
@@ -26,6 +31,8 @@ or you can do all that with only one command to copy
 ‘Press 2 to setup the tool’
 
 ## Screenshots
+
+![Screen Recording 2021-06-06 at 10 14 39 PM](https://user-images.githubusercontent.com/73632576/120935731-33122580-c715-11eb-8458-c7e8b0da7f3e.gif)
 
 <img width="475" alt="Screen Shot 2021-05-17 at 4 17 26 PM" src="https://user-images.githubusercontent.com/73632576/118523761-831d4e00-b74e-11eb-956b-ea4d5861ed80.PNG">
 
