@@ -34,10 +34,5 @@ or you can do all that with only one command to copy
 
 ![Screen Recording 2021-06-06 at 10 14 39 PM](https://user-images.githubusercontent.com/73632576/120935731-33122580-c715-11eb-8458-c7e8b0da7f3e.gif)
 
-<img width="475" alt="Screen Shot 2021-05-17 at 4 17 26 PM" src="https://user-images.githubusercontent.com/73632576/118523761-831d4e00-b74e-11eb-956b-ea4d5861ed80.PNG">
+<img width="647" alt="Screen Shot 2021-06-06 at 10 38 04 PM" src="https://user-images.githubusercontent.com/73632576/120936244-f562cc00-c717-11eb-9a05-ca8422c06799.png">
 
-<img width="409" alt="Screen Shot 2021-05-17 at 4 17 39 PM" src="https://user-images.githubusercontent.com/73632576/118523862-9d572c00-b74e-11eb-92f8-2531d3b5f80d.PNG">
-
-<img width="688" alt="Screen Shot 2021-05-17 at 4 17 55 PM" src="https://user-images.githubusercontent.com/73632576/118523819-93352d80-b74e-11eb-8bce-4bedaed12f3a.PNG">
-
-<img width="522" alt="Screen Shot 2021-05-17 at 4 18 15 PM" src="https://user-images.githubusercontent.com/73632576/118523889-a3e5a380-b74e-11eb-90e4-19ca1d2f6c94.PNG">
