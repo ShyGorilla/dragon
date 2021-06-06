@@ -1,6 +1,6 @@
 # dragon 🐉
 
-## What is Dragon ? 🐉
+## What is Dragon ? 
 Dragon is a tool that have a lot of tools with different options you can do. It has multiple menus and can install, start, and remove any tool. It has a security tools that can be used to find any problems or vulnerabilities in your OS.
 
 The tool is not finished 100%, more features will be added.
