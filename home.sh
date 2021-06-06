@@ -3,24 +3,29 @@ clear
 cyan='\e[0;36m'
 green='\e[0;34m'
 okegreen='\033[92m'
-lightgreen='\e[1;32m'
+lightgreen='\033[1;32m'
 white='\e[1;37m'
-red='\e[1;31m'
+red='\033[1;31m'
 yellow='\e[0;33m'
 BlueF='\e[1;34m' #Biru
 RESET="\033[00m" #normal
-orange='\e[38;5;166m'
+orange='\033[33m'
 chmod +x logo.sh
 
-
 ./logo.sh
+echo "  $lightgreen Before Starting any tool, you have to install it and get ✔ beside the tool"
+echo "  $lightgreen You can copy any text from xterm by pressing CONTROL+SHIFT+C"
+echo "  $lightgreen You can paste any text from xterm by pressing CONTROL+SHIFT+V"
+echo ""
 echo "  $lightgreen Choose an option:"
 echo ""
-echo  $okegreen"   $okegreen["$orange"1$okegreen]──["$orange"Brute Force tools$okegreen]"
-echo  $okegreen"   $okegreen["$orange"2$okegreen]──["$orange"Vulnerabilities tools$okegreen]"
-echo  $okegreen"   $okegreen["$orange"3$okegreen]──["$orange"Rootkits scanning tools$okegreen]"
-echo  $okegreen"   $okegreen["$orange"4$okegreen]──["$orange"Networking tools$okegreen]"
-echo  $okegreen"   $okegreen["$orange"0$okegreen]──["$orange"Main Menu$okegreen]"
+echo  $okegreen"   $okegreen["$orange"01$okegreen]──["$orange"Brute Force tools$okegreen]"
+echo  $okegreen"   $okegreen["$orange"02$okegreen]──["$orange"Vulnerabilities tools$okegreen]"
+echo  $okegreen"   $okegreen["$orange"03$okegreen]──["$orange"Rootkits scanning tools$okegreen]"
+echo  $okegreen"   $okegreen["$orange"04$okegreen]──["$orange"Networking tools$okegreen]"
+echo  $okegreen"   $okegreen["$orange"05$okegreen]──["$orange"Phishing tools$okegreen]"
+echo  $okegreen"   $okegreen["$orange"06$okegreen]──["$orange"Social Engineering tools$okegreen]"
+echo  $okegreen"   $okegreen["$orange"00$okegreen]──["$orange"Main Menu$okegreen]"
 echo ""
 
 echo  $okegreen"   ┌─["$red"Dragon$okegreen]──[$red~$okegreen]─["$orange"Main Menu$okegreen]:"
@@ -38,6 +43,12 @@ then
 elif [ $linux -eq 4 ]
 then
     ./tools/network/tools.sh
+elif [ $linux -eq 5 ]
+then
+    ./tools/phishing/tools.sh
+elif [ $linux -eq 6 ]
+then
+    ./tools/social/tools.sh
 elif [ $linux -eq 0 ]
 then
     ./dragon.sh

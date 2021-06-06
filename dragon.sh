@@ -3,17 +3,17 @@ clear
 cyan='\e[0;36m'
 green='\e[0;34m'
 okegreen='\033[92m'
-lightgreen='\e[1;32m'
+lightgreen='\033[1;32m'
 white='\e[1;37m'
-red='\e[1;31m'
+red='\033[1;31m'
 yellow='\e[0;33m'
 BlueF='\e[1;34m' #Biru
 RESET="\033[00m" #normal
-orange='\e[38;5;166m'
+orange='\033[33m'
 chmod +x logo.sh
-
 ./logo.sh
 chmod +x end.sh
+
 
 red1="`tput setaf 1`"
 if [ $(id -u) -ne 0 ]; then
@@ -43,7 +43,7 @@ then
 	chmod +x setup.sh
 	chmod +x xtermlogo.sh
 	sudo apt-get install xterm -y
-	xterm -T "☣ SSETUP THE TOOL ☣" -geometry 100x30 -e "./xtermlogo.sh ; sudo ./setup.sh"
+	xterm -T "☣ SETUP THE TOOL ☣" -geometry 100x30 -e "./xtermlogo.sh ; sudo ./setup.sh"
 	./dragon.sh
 
 elif [ $main -eq 0 ]

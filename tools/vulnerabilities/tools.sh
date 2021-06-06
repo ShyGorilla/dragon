@@ -3,13 +3,13 @@ clear
 cyan='\e[0;36m'
 green='\e[0;34m'
 okegreen='\033[92m'
-lightgreen='\e[1;32m'
+lightgreen='\033[1;32m'
 white='\e[1;37m'
-red='\e[1;31m'
+red='\033[1;31m'
 yellow='\e[0;33m'
 BlueF='\e[1;34m' #Biru
 RESET="\033[00m" #normal
-orange='\e[38;5;166m'
+orange='\033[33m'
 white="`tput setaf 7`"
 
 var1=$(find -type f -name "dhunter.rb" | grep tools/vulnerabilities/droid-hunter)
@@ -45,6 +45,8 @@ fi
 ./logo.sh
 
 echo "  $lightgreen Before Starting any tool, you have to install it and get ✔ beside the tool"
+echo "  $lightgreen You can copy any text from xterm by pressing CONTROL+SHIFT+C"
+echo "  $lightgreen You can paste any text from xterm by pressing CONTROL+SHIFT+V"
 echo ""
 echo "  $lightgreen Choose an option:"
 echo ""
@@ -78,6 +80,9 @@ then
         	echo "${white}"
             xterm -T "☣ INSTALLING DROID-HUNTER ☣" -geometry 100x30 -e "./logo.sh ; git clone https://github.com/hahwul/droid-hunter.git tools/vulnerabilities/droid-hunter ; cd tools/vulnerabilities/droid-hunter ; gem install html-table ; gem install colorize"
             xterm -T "☣ INSTALLING DROID-HUNTER ☣" -geometry 120x50 -e "./logo.sh ; cd tools/vulnerabilities/droid-hunter ; ruby dhunter.rb;bash"
+			echo ""
+			echo "  $lightgreen Droid Hunter tool has been installed successfully"
+        	sleep 2
     	    ./tools/vulnerabilities/tools.sh
         elif [ $install -eq 2 ]
     	then
@@ -85,7 +90,7 @@ then
             xterm -T "☣ INSTALLING MOBSF ☣" -geometry 100x30 -e "./logo.sh ; cd tools/vulnerabilities/Mobile-Security-Framework-MobSF ; sudo ./setup.sh"
         	echo ""
         	echo "  $lightgreen MobSF tool has been installed successfully"
-        	sleep 3
+        	sleep 2
         	./tools/vulnerabilities/tools.sh
         elif [ $install -eq 3 ]
     	then
@@ -188,7 +193,7 @@ then
 			xterm -T "☣ REMOVING Droid Hunter ☣" -geometry 100x50 -e "./logo.sh ; sudo rm -r tools/vulnerabilities/droid-hunter"
     		echo ""
     		echo "  $lightgreen Droid Hunter tool has been removed successfully"
-        	sleep 3
+        	sleep 2
 			./tools/vulnerabilities/tools.sh
     		
     	elif [ $remove -eq 2 ]
@@ -197,7 +202,7 @@ then
 			xterm -T "☣ REMOVING MOBSF ☣" -geometry 100x50 -e "./logo.sh ; sudo rm -r tools/vulnerabilities/Mobile-Security-Framework-MobSF"
     		echo ""
     		echo "  $lightgreen MOBSF tool has been removed successfully"
-        	sleep 3
+        	sleep 2
 			./tools/vulnerabilities/tools.sh
         elif [ $remove -eq 3 ]
     	then
@@ -205,7 +210,7 @@ then
 			xterm -T "☣ REMOVING OPENVAS ☣" -geometry 100x50 -e "./logo.sh ; sudo apt-get purge openvas ; sudo apt-get purge --auto-remove openvas ; sudo apt-get remove openvas ; sudo apt-get remove --auto-remove openvas"
     		echo ""
     		echo "  $lightgreen OPENVAS tool has been removed successfully"
-        	sleep 3
+        	sleep 2
 			./tools/vulnerabilities/tools.sh
         elif [ $remove -eq 0 ]
     	then

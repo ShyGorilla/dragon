@@ -2,17 +2,18 @@
 cyan='\e[0;36m'
 green='\e[0;34m'
 okegreen='\033[92m'
-lightgreen='\e[1;32m'
+lightgreen='\033[1;32m'
 white='\e[1;37m'
-red='\e[1;31m'
+red='\033[1;31m'
 yellow='\e[0;33m'
 BlueF='\e[1;34m' #Biru
 RESET="\033[00m" #normal
-orange='\e[38;5;166m'
+orange='\033[33m'
 white="`tput setaf 7`"
 
 
-ip=$(ip -4 addr | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | grep '19')
+InT3R=`netstat -r | grep "default" | awk {'print $8'}` 2>/dev/null
+ip=`ifconfig $InT3R | egrep -w "inet" | awk '{print $2}'`
 network_id="${ip%.*}."
 count=0
 last_alive_host=""
