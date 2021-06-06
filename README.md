@@ -5,6 +5,10 @@ Dragon is a tool that have a lot of tools with different options you can do. It 
 
 The tool is not finished 100%, more features will be added.
 
+## Supported OS 💻
+
+![Linux](https://img.shields.io/badge/-Linux-000000?style=flat&logo=linux&logoColor=FCC624)
+
 ## Build and install from source
 `git clone https://github.com/ShyGorilla/dragon.git` // Cloninng the tool
 
